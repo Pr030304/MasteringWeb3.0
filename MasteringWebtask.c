@@ -39,7 +39,7 @@ void move(Car* car) {
 
 bool detect_collision(Car* car1, Car* car2) {
     double distance = sqrt(pow((car1->x - car2->x), 2) + pow((car1->y - car2->y), 2) + pow((car1->z - car2->z), 2));
-    if (distance == 0) { // assuming collision distance of 10 units
+    if (distance == 0) { // assuming collision distance of 0 units
         return true;
     } else {
         return false;
